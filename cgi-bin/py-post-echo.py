@@ -2,7 +2,7 @@
 
 import sys
 
-print("Content-type: text/html")
+print("Content-type: text/html\n\n")
 print("<html><head><title>POST Message Body</title></head><body><h1 align=center>POST Message Body</h1><hr/>")
 
 print("Message Body: ")
