@@ -16,7 +16,7 @@ for line in sys.stdin:
   ls = ls + line
 print("<tr><td>Message Body:</td><td> %s</td></tr>", ls)
 
-print("</table>")
+#print("</table>")
 // Print HTML footer
 print("</body>")
 print("</html>")
