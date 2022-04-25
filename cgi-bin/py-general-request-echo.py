@@ -8,14 +8,14 @@ print("<html><head><title>General Request Echo</title></head><body><h1 align=cen
 
 #Get environment vars
 print("<table>")
-print("<tr><td>Protocol:</td><td>%s</td></tr>" % os.environ["SERVER_PROTOCOL"])
-print("<tr><td>Method:</td><td>%s</td></tr>" % os.environ["REQUEST_METHOD"])
+print("<tr><td>Protocol: </td><td>%s</td></tr>" % os.environ["SERVER_PROTOCOL"])
+print("<tr><td>Method: </td><td>%s</td></tr>" % os.environ["REQUEST_METHOD"])
 
-bodyStr = ""
-for line in sys.stdin:
-  bodyStr = bodyStr + line
+#bodyStr = ""
+#for line in sys.stdin:
+#  bodyStr = bodyStr + line
   
-print("<tr><td>Message Body:</td><td>%s</td></tr>" % bodyStr)
+print("<tr><td>Message Body: </td><td>%s</td></tr>" % sys.stdin[0])
 
 print("</table>")
 #// Print HTML footer
