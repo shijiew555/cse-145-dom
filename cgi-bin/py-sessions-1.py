@@ -45,13 +45,13 @@ print("</table>")
 
 # Links for other pages
 print("<br />")
-print("<a href=\"/cgi-bin/py-sessions-2.pt\">Session Page 2</a>")
+print("<a href=\"/cgi-bin/py-sessions-2.py\">Session Page 2</a>")
 print("<br />")
 print("<a href=\"/py-cgiform.html\">Py CGI Form</a>")
 print("<br /><br />")
 
 # Destroy Cookie button
-print("<form action=\"/cgi-bin/c-destroy-session.cgi\" method=\"get\">")
+print("<form action=\"/cgi-bin/py-destroy-session.py\" method=\"get\">")
 print("<button type=\"submit\">Destroy Session</button>")
 print("</form>");
 
