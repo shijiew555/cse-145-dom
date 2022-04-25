@@ -9,9 +9,9 @@ print("Content-type: text/html\n\n")
 
 # Body - HTML
 print("<html>");
-print("<head><title>C Sessions</title></head>")
+print("<head><title>Py Sessions</title></head>")
 print("<body>")
-print("<h1>C Sessions Page 2</h1>")
+print("<h1>Py Sessions Page 2</h1>")
 print("<table>")
 
 if (os.environ["HTTP_COOKIE"] != None and os.environ["HTTP_COOKIE"] == "destroyed"):
@@ -29,7 +29,7 @@ print("<a href=\"/py-cgiform.html\">PY CGI Form</a>")
 print("<br /><br />")
 
 # Destroy Cookie button
-print("<form action=\"/cgi-bin/c-destroy-session.cgi\" method=\"get\">")
+print("<form action=\"/cgi-bin/py-destroy-session.py\" method=\"get\">")
 print("<button type=\"submit\">Destroy Session</button>")
 print("</form>")
 print("</body>")
