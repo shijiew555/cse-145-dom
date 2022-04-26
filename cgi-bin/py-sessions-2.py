@@ -4,8 +4,8 @@ import os
 
 
 # Headers
-print("Cache-Control: no-cache\n")
-print("Content-type: text/html\n\n")
+print("Cache-Control: no-cache")
+print("Content-type: text/html\n")
 
 # Body - HTML
 print("<html>");
