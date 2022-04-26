@@ -14,9 +14,10 @@ print("<body>")
 print("<h1>Py Sessions Page 2</h1>")
 print("<table>")
 
+ck = (os.environ["HTTP_COOKIE"].split(";"))[1][1:]
 #ck = os.environ["HTTP_COOKIE"].split(";"))[1][1:]
-if (os.environ["HTTP_COOKIE"] != None and (os.environ["HTTP_COOKIE"].split(";"))[1] != "destroyed"):
-  print("<tr><td>Cookie:</td><td>%s</td></tr>\n" % (os.environ["HTTP_COOKIE"].split(";"))[1])
+if (os.environ["HTTP_COOKIE"] != None and ck != "destroyed"):
+  print("<tr><td>Cookie:</td><td>%s</td></tr>\n" % ck)
 else:
   print("<tr><td>Cookie:</td><td>None</td></tr>\n")
 
