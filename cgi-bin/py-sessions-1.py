@@ -35,7 +35,7 @@ print("<table>")
 
 # First check for new Cookie, then Check for old Cookie
 if len(name) > 0:
-  print("<tr><td>Cookie:</td><td>%s</td></tr>" % name)
+  print("<tr><td>Cookie:</td><td>%s</td></tr>" % username)
 elif (os.environ["HTTP_COOKIE"] != None and os.environ["HTTP_COOKIE"] == "destroyed"):
   print("<tr><td>Cookie:</td><td>%s</td></tr>" % os.environ["HTTP_COOKIE"])
 else:
