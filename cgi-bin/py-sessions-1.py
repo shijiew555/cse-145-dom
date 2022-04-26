@@ -22,7 +22,7 @@ if len(name) > 0:
   print("Content-type: text/html")
   print("Set-Cookie: %s\n" % name)
 else:
-  print("Content-type: text/html\n\n")
+  print("Content-type: text/html\n")
 
 # Body - HTML
 print("<html>")
