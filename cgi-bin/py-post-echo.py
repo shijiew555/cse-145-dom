@@ -9,7 +9,7 @@ print("Message Body: ")
 
 #for line in sys.stdin:
 #  print(line)
-sys.stdin.readline()
+print(sys.stdin.readline())
 
 print("<br/>")
 
