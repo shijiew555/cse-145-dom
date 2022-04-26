@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-import="java.util.*","java.text.SimpleDateFormat",
+<%@ page language="java" contentType="text/html" import="java.util.*","java.text.SimpleDateFormat",
 "java.util.Date"
   pageEncoding="UTF-8"%>
 <!DOCTYPE HTML html Public "-//W3C//DTD XHTML 1.0 Transitional//EN"
