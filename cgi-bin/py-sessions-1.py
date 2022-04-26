@@ -15,14 +15,12 @@ for line in sys.stdin:
   username = username + line
 
 # Check to see if a proper name was sent
-name = ""
-if username[0] == 'u':
-  name = username[0:9]
+name = (username.split("="))[1]
 
 # Set the cookie using a header, add extra \n to end headers
 if len(name) > 0:
   print("Content-type: text/html")
-  print("Set-Cookie: %s\n" % username)
+  print("Set-Cookie: %s\n" % name)
 else:
   print("Content-type: text/html\n\n")
 
@@ -35,7 +33,7 @@ print("<table>")
 
 # First check for new Cookie, then Check for old Cookie
 if len(name) > 0:
-  print("<tr><td>Cookie:</td><td>%s</td></tr>" % username)
+  print("<tr><td>Cookie:</td><td>%s</td></tr>" % name)
 elif (os.environ["HTTP_COOKIE"] != None and os.environ["HTTP_COOKIE"] == "destroyed"):
   print("<tr><td>Cookie:</td><td>%s</td></tr>" % os.environ["HTTP_COOKIE"])
 else:
