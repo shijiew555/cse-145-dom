@@ -8,7 +8,7 @@ print("Cache-Control: no-cache")
 print("Content-type: text/html\n")
 
 # Body - HTML
-print("<html>");
+print("<html>")
 print("<head><title>Py Sessions</title></head>")
 print("<body>")
 print("<h1>Py Sessions Page 2</h1>")
