@@ -36,10 +36,11 @@ print("<h1>Python Sessions Page 1</h1>")
 print("<table>")
 
 # First check for new Cookie, then Check for old Cookie
+ck = os.environ["HTTP_COOKIE"].split(";"))[1][1:]
 if len(name) > 0:
   print("<tr><td>Cookie:</td><td>%s</td></tr>" % name)
-elif (os.environ["HTTP_COOKIE"] != None and (os.environ["HTTP_COOKIE"].split(";"))[1][1:] != "destroyed"):
-  print("<tr><td>Cookie:</td><td>%s</td></tr>" % os.environ["HTTP_COOKIE"])
+elif (os.environ["HTTP_COOKIE"] != None and ck != "destroyed"):
+  print("<tr><td>Cookie:</td><td>%s</td></tr>" % ck)
 else:
   print("<tr><td>Cookie:</td><td>None</td></tr>")
 
