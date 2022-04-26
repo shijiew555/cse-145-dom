@@ -7,8 +7,9 @@ print("<html><head><title>POST Message Body</title></head><body><h1 align=center
 
 print("Message Body: ")
 
-for line in sys.stdin:
-  print(line)
+#for line in sys.stdin:
+#  print(line)
+sys.stdin.readline()
 
 print("<br/>")
 
