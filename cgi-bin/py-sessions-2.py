@@ -16,7 +16,7 @@ print("<table>")
 
 #ck = os.environ["HTTP_COOKIE"].split(";"))[1][1:]
 if (os.environ["HTTP_COOKIE"] != None and (os.environ["HTTP_COOKIE"].split(";"))[0] != "destroyed"):
-  print("<tr><td>Cookie:</td><td>%s</td></tr>\n" % os.environ["HTTP_COOKIE"])
+  print("<tr><td>Cookie:</td><td>%s</td></tr>\n" % (os.environ["HTTP_COOKIE"].split(";"))[0])
 else:
   print("<tr><td>Cookie:</td><td>None</td></tr>\n")
 
