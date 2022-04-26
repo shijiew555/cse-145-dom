@@ -5,9 +5,10 @@ puts "<html><head><title>POST Message Body</title></head><body><h1 align=center>
 
 puts "Message Body: "
 
-STDIN.read.split("\n").each do |a|
-   puts a
-end
+#STDIN.read.split("\n").each do |a|
+#   puts a
+#end
+puts STDIN.readline()
 
 puts "<br/>"
 
