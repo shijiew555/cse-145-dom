@@ -5,12 +5,10 @@ puts "<html><head><title>General Request Echo</title></head><body><h1 align=cent
 
 #Get environment vars
 puts "<table>"
-puts "<tr><td>Protocol:</td><td>%s</td></tr>" % os.environ["SERVER_PROTOCOL"]
-puts "<tr><td>Method:</td><td>%s</td></tr>" % os.environ["REQUEST_METHOD"]
+puts "<tr><td>Protocol:</td><td>%s</td></tr>" % ENV["SERVER_PROTOCOL"]
+puts "<tr><td>Method:</td><td>%s</td></tr>" % ENV["REQUEST_METHOD"]
 
 puts STDIN.readline()
-
-puts "<tr><td>Message Body: </td><td>%s</td></tr>" % bodystr
 
 puts "</table>"
 #// Print HTML footer
