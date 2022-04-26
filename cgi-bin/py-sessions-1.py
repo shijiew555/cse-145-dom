@@ -15,7 +15,11 @@ for line in sys.stdin:
   username = username + line
 
 # Check to see if a proper name was sent
-name = (username.split("="))[1]
+splist = username.split("=")
+if len(splist) > 1:
+  name = splist[1]
+else:
+  name = username
 
 # Set the cookie using a header, add extra \n to end headers
 if len(name) > 0:
