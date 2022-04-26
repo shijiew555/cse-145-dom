@@ -5,10 +5,6 @@
   String path = request.getContextPath();
   String basePath = request.getScheme()+"://"+request.getServerName()+
     ":"+request.getServerPort()+path+"/";
-  String IP = request.getRemoteAddr();
-  SimpleDateFormat formatter = new SimpleDateFormat("EEEE, MMM dd, yyyy HH:mm:ss a");  
-  Date date = new Date(); 
-  
 %>
 <!DOCTYPE HTML>
 <html>
@@ -17,7 +13,7 @@
   <body>
    
 
-    <p>{\"message\":\"Hello World\",\"date\":\"${dataFormat.format(data)}\",\"currentIP\":\"${ip}\"}</p>
+    <p>{\"message\":\"Hello World\",\"date\":\"<%= new java.util.Date() %>\",\"currentIP\":\"<%= request.getRemoteAddr() %>\"}</p>
 
   </body>
 </html>
