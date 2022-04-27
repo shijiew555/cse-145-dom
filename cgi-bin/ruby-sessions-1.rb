@@ -13,7 +13,7 @@ username = ""
 STDIN.read.split("\n").each do |a|
   username = username + a
 end
-
+'''
 # Check to see if a proper name was sent
 splist = username.split("=", -1)
 if len(splist) > 1
@@ -29,12 +29,14 @@ if name.length > 0
 elsif
   puts "Content-type: text/html\n"
 end
-
+'''
+puts "Content-type: text/html\n"
 # Body - HTML
 puts "<html>"
 puts "<head><title>Python Sessions</title></head>"
 puts "<body>"
 puts "<h1>Python Sessions Page 1</h1>"
+'''
 puts "<table>"
 
 # First check for new Cookie, then Check for old Cookie
@@ -50,6 +52,7 @@ else
 end
 
 puts "</table>"
+'''
 
 # Links for other pages
 puts "<br />"
