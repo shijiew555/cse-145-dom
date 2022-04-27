@@ -17,6 +17,5 @@ puts "<br />"
 puts "<a href=\"/cgi-bin/py-sessions-2.py\">Back to Page 2</a>"
 puts "<br />"
 puts "<a href=\"/py-cgiform.html\">PY CGI Form</a>"
-
 puts "</body>"
 puts "</html>"
