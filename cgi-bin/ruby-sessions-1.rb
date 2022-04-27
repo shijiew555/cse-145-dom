@@ -18,7 +18,7 @@ end
 splist = username.split("=", -1)
 if len(splist) > 1
   name = splist[1]
-else
+elsif
   name = username
 end
 
@@ -26,7 +26,7 @@ end
 if name.length > 0
   puts "Content-type: text/html"
   puts "Set-Cookie: %s\n" % [name]
-else
+elsif
   puts "Content-type: text/html\n"
 end
 
@@ -42,9 +42,9 @@ puts "<table>"
 #ck = ck.slice(1..(ck.length-1))
 ck = "debug"
 if len(name) > 0
-  puts "<tr><td>Cookie:</td><td>%s</td></tr>" % name
+  puts "<tr><td>Cookie:</td><td>%s</td></tr>" % [name]
 elsif ENV["HTTP_COOKIE"] != None and ck != "destroyed"
-  puts "<tr><td>Cookie:</td><td>%s</td></tr>" % ck
+  puts "<tr><td>Cookie:</td><td>%s</td></tr>" % [ck]
 else
   puts "<tr><td>Cookie:</td><td>None</td></tr>"
 end
@@ -52,7 +52,7 @@ end
 puts "</table>"
 
 # Links for other pages
-puts "<br />")
+puts "<br />"
 puts "<a href=\"/cgi-bin/py-sessions-2.py\">Session Page 2</a>"
 puts "<br />"
 puts "<a href=\"/py-cgiform.html\">Py CGI Form</a>"
