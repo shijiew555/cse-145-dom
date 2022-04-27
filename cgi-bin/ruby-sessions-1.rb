@@ -38,8 +38,9 @@ puts "<h1>Python Sessions Page 1</h1>"
 puts "<table>"
 
 # First check for new Cookie, then Check for old Cookie
-ck = (ENV["HTTP_COOKIE"].split(";"))[1]
-ck = ck.slice(1..(ck.length-1))
+#ck = (ENV["HTTP_COOKIE"].split(";"))[1]
+#ck = ck.slice(1..(ck.length-1))
+ck = "debug"
 if len(name) > 0
   puts "<tr><td>Cookie:</td><td>%s</td></tr>" % name
 elsif ENV["HTTP_COOKIE"] != None and ck != "destroyed"
