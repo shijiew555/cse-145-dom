@@ -23,7 +23,7 @@ else
 end
 
 # Set the cookie using a header, add extra \n to end headers
-if len(name) > 0
+if name.length > 0
   puts "Content-type: text/html"
   puts "Set-Cookie: %s\n" % [name]
 else
